@@ -1,0 +1,204 @@
+/* Common */
+body{
+    font-family: "Roboto", "sans serif";
+    font-size: 1.2em;
+    color: #C7C9D3;
+    background: linear-gradient(150deg, rgba(54,57,65,1) 0%, rgba(9,9,11,1) 70%);    
+    margin: 0px;
+    padding: 0px;
+}
+.nav-item a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131417;
+    text-decoration: none;
+    font-family: "Roboto slab", "sans-serif";
+
+}
+.header>.logo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.header>.logo img{
+    width: 300px;
+    height: 100%;
+}
+.header>.central-menu{
+    display: flex;
+    flex-direction: column;
+}
+.header>.central-menu > .explore h2{
+    color: #E3DA83;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+.header>.central-menu > .nav-menu {
+    display: flex;
+    align-items: center;
+}
+.header>.central-menu > .nav-menu > .nav-item {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+.header>.central-menu > .nav-menu > .nav-item:hover {
+    background-color: #36383F;
+}
+.header>.central-menu > .nav-menu > #spark {
+    margin-left: 30px;
+}
+.header>.central-menu > .nav-menu > #spark a{
+    color: #C7C9D3;
+}
+.header>.central-menu > .nav-menu > #spark i{
+    margin-left: 10px;
+}
+.header>.right-menu{
+    display: flex;
+    align-items: center;
+}
+.header>.right-menu > .nav-item {
+    background-color: #36383F;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 5px;
+}
+.header>.right-menu > .nav-item:hover {
+    background-color: #55585f;
+}
+.header>.right-menu > .nav-item i{
+    color: #4BCE79;
+}
+.header>.right-menu > .search i{
+    color: #C7C9D3;
+    font-size: 2em;
+    padding: 15px;
+    margin: 5px;
+}
+.header>.right-menu > .search i:hover{
+    color: #4BCE79;
+
+}
+/* End Header */
+/* Body */
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.body > .left-column{
+    padding-left: 2em;
+}
+.body > .left-column > .body-text p{
+    font-size: 2.5em;
+}
+.body > .left-column > .body-text > #upper-text{
+    font-size: 2.8em;
+}
+.body > .left-column > .body-btns{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.body > .left-column > .body-btns > .cta a{
+    text-decoration: none;
+    color: #131417;
+    font-size: 3vw;
+    background-color: #4BCE79;
+    border-radius: 4px;
+    padding: 20px;
+    margin-right: 20px;
+    line-break: normal;
+    transition: 0.3s;
+}
+.body > .left-column > .body-btns > .cta a:hover{
+    color: #ffffff;
+    background-color: #0b4e23;
+}
+.body > .left-column > .body-btns > .nav-item a{
+    font-size: 3vw;
+    background-color: black;
+    border-radius: 4px;
+    padding: 20px;
+}
+.body > .left-column > .body-btns > .nav-item a:hover{
+    background-color: #36383F;
+}
+.body > .right-column{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+.body > .right-column > #pic-text{
+font-weight: 900;
+}  
+.body > .right-column > .body-img img{
+    width: 100%;
+}
+/* End Body */
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer > .nav-item {
+    background-color: #363941;
+    border: 1px solid #C7C9D3;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.footer > .nav-item b {
+    font-family: 'Rammetto One', cursive;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+/* Media Queries */
+@media (max-width: 615px) {
+    .header{
+        flex-direction: column;
+    }
+    .header > .logo{
+        width: 100%;
+    }
+    .header >.central-menu > .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header>.central-menu > .nav-menu > #spark {
+        margin-left: 15px;
+    }
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+    .body > .left-column > .body-btns{
+        flex-direction: column;
+    }
+    .body > .left-column > .body-btns > .nav-item{
+        padding-top: 3em;
+    }
+    .body > .right-column {
+        padding: 10px;
+    }
+    .footer{
+        flex-direction: column;
+        
+    }
+    .footer > .nav-item{
+        margin-bottom: 0px;
+    }
+}
